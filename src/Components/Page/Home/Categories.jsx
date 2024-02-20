@@ -27,7 +27,7 @@ function Categories() {
         </div>
         {/* category grid */}
         <div>
-            <div className='mt-8 flex flex-col md:flex-row  items-center gap-4'>
+            <div className='mt-52 flex flex-col md:flex-row  items-center gap-4'>
                 <p className='md:-rotate-90 font-smibold uppercase text-center bg-black text-white md:my-2 rounded-sm inline-flex '>
                     explore new and popular styles
                 </p>

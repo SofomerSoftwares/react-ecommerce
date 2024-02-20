@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/images/logo.png'
+import logo from '../../assets/images/logo.png'
 import {FaHeart, FaUser, FaSearch, FaShoppingBag, FaBars, FaTimes} from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom';
 function Nav() {
@@ -45,7 +45,7 @@ function Nav() {
          <NavLink to={"/"}>Home</NavLink>
          </li>  
          <li className='hover:text-orange-500 cursor-pointer'>
-          <NavLink to={"/Categories"}>Categories</NavLink>  
+          <NavLink to={"/category"}>Categories</NavLink>  
          </li> 
          <li className='hover:text-orange-500 cursor-pointer'>
           <NavLink to={"/products"}>Products</NavLink>  
