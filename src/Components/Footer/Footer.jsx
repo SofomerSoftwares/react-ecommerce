@@ -3,14 +3,12 @@ import logo from '../../assets/images/logo.png'
 
 function Footer() {
   return (
- 
-    
-<div>
-<footer className="footer p-10 bg-base-200 text-base-content">
-<div className="w-40 xl:ml-6">
-<img src={logo} alt=""/>
+<footer className="footer px-4 py-16 bg-base-200 text-base-content">
+  <div  className="w-40 h-40">
+  <img src={logo} alt=""  />
   </div>
-  <nav>
+
+  <nav >
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
     <a className="link link-hover">Design</a>
@@ -39,7 +37,7 @@ function Footer() {
       </label> 
       <div className="join ">
         <input type="text" placeholder="username@site.com" className="input input-bordered join-item" /> 
-        <button className="btn btn-primary join-item">Subscribe</button>
+        <button className=" px-2 btn btn-primary join-item">Subscribe</button>
         </div>
         
    
@@ -48,7 +46,7 @@ function Footer() {
   </form>
   
 </footer>
-</div>
+
   )
 }
 

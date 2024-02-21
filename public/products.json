@@ -1,26 +1,26 @@
  [
   {
       "id": 1,
-      "name": "Almond Toe Court Shoes, Patent Black",
+      "name": "Almond white T-shirt",
       "image": "../src/assets/images/aa69543e-5be1-4db1-931e-c91aa34b125e1682666262387TshirtsLCWaikikiMenTshirtsLCWaikikiMenTshirtsLCWaikikiMenTsh1.jpg",
-      "category": "Womens Footwear",
+      "category": "T-Shirt",
       "price": 99.00,
       "stock": 5,
       "Status": "Featured"
   },
   {
       "id": 2,
-      "name": "Suede Shoes, Blue",
+      "name": "Black T-shirt",
       "image": "../src/assets/images/0e6555e0-90f9-44f2-a227-076ce8f0ef6c1682666260676TshirtsLCWaikikiMenTshirtsLCWaikikiMenTshirtsLCWaikikiMenTsh1.jpg",
-      "category": "Womens Footwear",
+      "category": "T-Shirt",
       "price": 42.00,
       "stock": 4
   },
   {
       "id": 3,
-      "name": "Leather Driver Saddle Loafers, Tan",
+      "name": "Black Trouser",
       "image": "../src/assets/images/7c65c273-16d6-47a4-bcbd-fa93b23bb22b1682661443621TshirtsLCWaikikiMenShortsLCWaikikiMenTshirtsLCWaikikiMenTshi1.jpg",
-      "category": "Mens Footwear",
+      "category": "Mens Trouser",
       "price": 34.00,
       "stock": 12,
       "Status": "Featured"
