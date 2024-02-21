@@ -14,7 +14,7 @@ function Cards({filteredItems}) {
     <div keys={items.id}  className='card card-compact  w-72 bg-base-100 shadow-xl'>
        <Link to={`/shop/${items.id}`}>
        <img src={items.image} alt="" className='rounded-md h-72 w-72'/>
-       </Link>
+    
        <div className="card-body">
        <h2 className="card-title text-sm">{items.name}</h2>
        <p className='font-semibold'>{items.price} ETB</p>
@@ -25,8 +25,10 @@ function Cards({filteredItems}) {
       <button className="btn btn-outline btn-primary">Buy Now</button>
       </div>
       </div>
-       
+      </Link>
       </div>
+      
+
   ))
 }
 
