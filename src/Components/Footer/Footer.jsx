@@ -6,8 +6,8 @@ function Footer() {
 <footer className="footer px-4 py-16 bg-base-200 text-base-content">
   <div  className="w-40 h-40">
   <img src={logo} alt=""  />
-  </div>
-
+  </div> 
+{/*   service lists */}
   <nav >
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
@@ -27,8 +27,8 @@ function Footer() {
     <a className="link link-hover">Terms of use</a>
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
-    
   </nav> 
+{/*   form elemets  */}
   <form>
     <h6 className="footer-title">Newsletter</h6> 
     <fieldset className="form-control w-auto justify-between gap-4 flex-col md:flex-row ">
