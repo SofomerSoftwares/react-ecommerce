@@ -16,7 +16,7 @@ function Nav() {
         <img className="w-40 h-auto " src={logo} alt="logo" />
     
           {/* search items */}
-        <input type="text" placeholder="Search for everything" name="" id='search' className=' w-full h-auto  rounded-lg border focus-visible: text-start px-10 py-1 md:flex hidden ' />
+        <input type="text" placeholder="Search for everything" name="" id='search' className='input input-bordered join-item w-full h-auto  rounded-lg border focus-visible: text-start px-10 py-1 md:flex hidden ' />
         <a href='' className='relative right-8 rounded-full items-end' ><FaSearch/></a> 
    
         

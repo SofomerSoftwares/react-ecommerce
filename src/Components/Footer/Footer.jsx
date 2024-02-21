@@ -7,6 +7,9 @@ function Footer() {
     
 <div>
 <footer className="footer p-10 bg-base-200 text-base-content">
+<div className="w-40 xl:ml-6">
+<img src={logo} alt=""/>
+  </div>
   <nav>
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
@@ -26,22 +29,24 @@ function Footer() {
     <a className="link link-hover">Terms of use</a>
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
+    
   </nav> 
   <form>
     <h6 className="footer-title">Newsletter</h6> 
-    <fieldset className="form-control w-80 flex ">
+    <fieldset className="form-control w-auto justify-between gap-4 flex-col md:flex-row ">
       <label className="label">
         <span className="label-text">Enter your email address</span>
       </label> 
-      <div className="join">
+      <div className="join ">
         <input type="text" placeholder="username@site.com" className="input input-bordered join-item" /> 
         <button className="btn btn-primary join-item">Subscribe</button>
         </div>
-        <div className='w-20 h-20'>
-        <img src={logo} alt=""/>
-        </div>
+        
+   
     </fieldset>
+   
   </form>
+  
 </footer>
 </div>
   )
