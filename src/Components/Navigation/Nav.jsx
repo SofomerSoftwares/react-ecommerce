@@ -39,8 +39,8 @@ function Nav() {
      
       
        {/* category items */}
-       <div className='px-16 pt-1 md:px-64 '>
-       <ul className='md:flex justify-between items-center md:max-w-screen-md 2xl:max-w-screen-md 2xl:px-16 2xl:ml-72 hidden'>
+       <div className='mx-48 pt-1 md:px-16'>
+       <ul className='md:flex justify-between font-semibold items-center md:max-w-screen-md 2xl:max-w-screen-md 2xl:px-16 2xl:ml-72 hidden'>
          <li className='hover:text-orange-500 cursor-pointer'>  
          <NavLink to={"/"}>Home</NavLink>
          </li>  

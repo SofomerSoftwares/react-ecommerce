@@ -3,24 +3,30 @@ import image2 from '../../../assets/category_image/image2.jpg'
 import image3 from '../../../assets/category_image/image3.jpg'
 import image4 from '../../../assets/category_image/image4.jpg'
 import image5 from '../../../assets/category_image/image5.jpg'
+import image6 from '../../../assets/category_image/7.jpg'
+
+
 function Categories() {
-    
+   
     const companyLogo = [
-    { id: 1 , img:"../../../assets/category_image/7.jpg"},
-    { id: 2 , img:"../../../assets/category_image/7.jpg"},
-    { id: 3 , img:"../../../assets/category_image/7.jpg"},
-    { id: 4 , img:"../../../assets/category_image/7.jpg"}
+    { id: 1 , img:`${image6}`},
+    { id: 2 , img:`${image6}`},
+    { id: 3 , img:`${image6}`},
+    { id: 4 , img:`${image6}`}
    
     ]
 
   return (
     <div className='max-w-screen-2xl mx-auto container xl:px-28 px-4 py-28'>
         {/* brand logo */}
-        <div className=' flex items-center justify-around flex-wrap gap-4 py-2'>
+        <h2 className='text-center text-3xl font-semibold text-yellow-950 mb-10'>Brands We Us</h2>
+        <div className=' flex items-center justify-around flex-wrap gap-4 py-2 w-screen-full'>
+        
             {
-                companyLogo.map(({id,img})=>(
-                 <div key={id}>
-                    <img src={img} alt=""/>
+
+                companyLogo.map((list) =>(
+                 <div key={list.id} className='w-40 h-40'>
+                    <img src={list.img} alt=""/>
                      </div>
                 ))
             }
