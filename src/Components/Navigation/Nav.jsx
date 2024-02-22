@@ -7,10 +7,11 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () =>{
-    setIsMenuOpen(!isMenuOpen);  }
+    setIsMenuOpen(!isMenuOpen);
+    }
 
   return (
-    <header className='max-w-screen-5xl h-24 xl:px-4 px-8 bg-gray-100 absolute top-0 right-0 left-0'>
+    <header className='max-w-screen-5xl h-40 xl:px-4 px-8 bg-gray-100 absolute top-0 right-0 left-0'>
       <nav className='flex justify-between items-center container'>
         {/* logo image */}
         <img className="w-40 h-auto " src={logo} alt="logo" />
@@ -18,13 +19,12 @@ function Nav() {
           {/* search items */}
         <input type="text" placeholder="Search for everything" name="" id='search' className='input input-bordered join-item w-full h-auto  rounded-lg border focus-visible: text-start px-10 py-1 md:flex hidden ' />
         <a href='' className='relative right-8 rounded-full items-end' ><FaSearch/></a> 
-   
-        
+
         {/* top  menu Items */}
           <div className='sm:flex items-center gap-8 hidden '>
-          <a href='#' className='flex item-center gap-8 text-lg'>  Items <FaHeart /></a>
-          <a href='#' className='flex item-center gap-8 text-lg'>Shopping <FaShoppingBag />  </a>
-          <a href='#' className='flex item-center gap-8 text-lg'>   Account <FaUser /> </a>
+          <NavLink to='#' className='flex item-center gap-8 text-lg'>  Items <FaHeart /></NavLink>
+          <NavLink to='#' className='flex item-center gap-8 text-lg'>Shopping <FaShoppingBag /> </NavLink>
+         <NavLink to='/login' className='flex item-center gap-8 text-lg'>   Account <FaUser /></NavLink>
        </div>
        
        <div className='md:hidden'> 
@@ -35,12 +35,9 @@ function Nav() {
             </button>
         </div>
         </nav>
-
-     
-      
        {/* category items */}
-       <div className='mx-48 pt-1 md:px-16'>
-       <ul className='md:flex justify-between font-semibold items-center md:max-w-screen-md 2xl:max-w-screen-md 2xl:px-16 2xl:ml-72 hidden'>
+       <div className='xl:px-64 lg:px-10 md:px-4  pt-1'>
+       <ul className='md:flex justify-between font-semibold items-center md:max-w-screen-2xl 2xl:px-16 2xl:ml-72 hidden'>
          <li className='hover:text-orange-500 cursor-pointer'>  
          <NavLink to={"/"}>Home</NavLink>
          </li>  
@@ -59,14 +56,15 @@ function Nav() {
          <li className='hover:text-orange-500 cursor-pointer'>
           <NavLink to={"/BestSells"}>Best Sellers</NavLink>  
          </li>  
-         
-  
       </ul>  
       </div>
       <hr/>
       {/* only for mobile */}
-      <div className='sm:hidden '>
-      <ul className={`bg-black text-white px-4 py-2 rounded ${isMenuOpen ? "" : "hidden"}`}>
+      <div className='sm:hidden'>
+        <div  className="drawer-content">
+
+        </div>
+      <ul className={`menu p-4  min-h-full bg-base-200 text-base-content ${isMenuOpen ? "" : "hidden"}`}>
       <li className='hover:text-orange-500 cursor-pointer'>  
          <NavLink to={"/"}>Home</NavLink>
          </li>  
@@ -85,12 +83,9 @@ function Nav() {
          <li className='hover:text-orange-500 cursor-pointer'>
           <NavLink to={"/BestSells"}>Best Sellers</NavLink>  
          </li>  
-
       </ul>  
       </div>
     </header>
-    
-  
   )
 }
 export default Nav

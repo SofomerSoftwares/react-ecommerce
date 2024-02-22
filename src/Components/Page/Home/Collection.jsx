@@ -3,7 +3,7 @@ import React from 'react'
 
 function Collection() {
   return (
-     <div className='w-full container  xl:px-28 px-8 my-20'>
+     <div className='max-w-screen-2xl container mx-auto  xl:px-auto my-20'>
            <div className='bg-[url("https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144")] h-64 rounded-md overflow-hidden bg-cover bg-center '>
                 <div className="bg-gray-900 bg-opacity-50 flex items-center w-full h-full">
                     <div className="px-10 max-w-xl">
