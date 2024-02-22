@@ -6,15 +6,11 @@ function Cards({filteredItems}) {
  
   return (
     <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
-
-
 {
-
   filteredItems.map((items) =>(
     <div key={items.id} className='card card-compact  w-72 bg-base-100 shadow-xl'>
        <Link to={`/shop/${items.id}`}>
        <img src={items.image} alt="" className='rounded-md h-72 w-72'/>
-    
        <div className="card-body">
         <h2 className="card-title text-sm">{items.name}</h2>
         <div className='flex flex-row justify-between gap-24'> 
@@ -28,12 +24,9 @@ function Cards({filteredItems}) {
       </div>
       </Link>
       </div>
-      
-
-  ))
+      ))
 }
-
-    </div>
+ </div>
   )
 }
 
